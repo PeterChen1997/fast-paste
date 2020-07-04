@@ -1,30 +1,55 @@
 <template>
-  <view class="index">
-    <NumberDisplay/>
-    <NumberSubmit/>
+  <view class="container">
+
+    <view class="title">
+      <text>快速粘贴板</text>
+      <text>Fast Paste</text>
+    </view>
+
+    <view class="options">
+      <text>新建记录</text>
+      <text>历史记录</text>
+      <text>收藏夹</text>
+    </view>
+
+    <view class="statement">
+      <text>Fast Paste</text>
+      <text>develop by Peter Chen</text>
+    </view>
   </view>
 </template>
 
 <script>
-import NumberDisplay from '../../components/NumberDisplay.vue'
-import NumberSubmit from '../../components/NumberSubmit.vue'
 
 export default {
   name: 'Index',
   components: {
-    NumberDisplay,
-    NumberSubmit
+
   }
 }
 </script>
 
 <style>
-.index {
+.container {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.title {
+  height: 300px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+
+  height: 550px;
+}
+
+.statement {
+  height: 300px;
 }
 </style>

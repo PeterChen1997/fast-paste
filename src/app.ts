@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import store from './store'
 
-import './app.less'
+import './app.sass'
 
 const App = createApp({
   onShow (options) {},
